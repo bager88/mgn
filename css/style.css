@@ -44,7 +44,7 @@ header{
   font-size: 16px;
 }
 
-.header_btn:after{
+.header_contacts:after{
   content: "";
   clear: both;
   display: block;
@@ -53,5 +53,40 @@ header{
 .header_phone,.header_email{
   color: #cbcacb;
   letter-spacing: 0.25px;
-
+  line-height: 45px;
 }
+
+.header_phone{
+  padding-left: 20px;
+  padding-right: 30px;
+}
+
+.header_email{
+  padding-left: 24px;
+}
+
+.header_content{
+  padding: 34px 0px 23px;
+}
+
+.header_content-inner{
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu li{                              /*делаем список в 1 линию*/
+  display: inline-block;
+}
+
+.menu a{                             /*оформляем ссылки в списке*/
+  color: #323232;
+  font-size: 16px;
+  line-height: 36px;
+  border: 1px solid transparent;         /*прозрачная линия для hover*/
+  padding: 0px 16px;
+}
+
+.menu li + li{                          /*создаем расстояние между ссылками списка*/
+  padding-left: 10px;
+}
+
