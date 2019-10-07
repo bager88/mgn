@@ -42,6 +42,15 @@ header{
   background-color: #ffc222;
   padding: 5px 20px 4px 50px;
   font-size: 16px;
+  position: relative;
+}
+
+.header_btn::before{
+  content: "\f0b1";
+  font-family: 'icomoon';
+  position: absolute;
+  left: 22px;
+  color: #1b1b1b;
 }
 
 .header_contacts:after{
@@ -54,6 +63,7 @@ header{
   color: #cbcacb;
   letter-spacing: 0.25px;
   line-height: 45px;
+  position: relative;              /*Делаем иконки  слева и выравниваем*/
 }
 
 .header_phone{
@@ -61,8 +71,24 @@ header{
   padding-right: 30px;
 }
 
+.header_phone:before{
+  content: "\f095";
+  font-family: 'icomoon';
+  position: absolute;               /*Делаем иконку телефона слева и выравниваем*/
+  left: 0;            /*Делаем иконку телефона слева и выравниваем*/
+  color: #ffc222;
+}
+
 .header_email{
   padding-left: 24px;
+}
+
+.header_email:before{
+  content: "\f003";
+  font-family: 'icomoon';
+  position: absolute;
+  left: 0;
+  color: #ffc222;
 }
 
 .header_content{
@@ -84,9 +110,18 @@ header{
   line-height: 36px;
   border: 1px solid transparent;         /*прозрачная линия для hover*/
   padding: 0px 16px;
+  transition: all .3s;         /*замедление появления рамки для hover*/
+}
+
+.menu a:hover{
+  border-color: #ffc222;
 }
 
 .menu li + li{                          /*создаем расстояние между ссылками списка*/
   padding-left: 10px;
+}
+
+#modal{
+  display: none;
 }
 

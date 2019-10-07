@@ -9,6 +9,8 @@
   <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700|Roboto:400,500&display=swap&subset=cyrillic"
     rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -19,7 +21,7 @@
         <div class="header_contacts">
           <a class="header_phone" href="tel:380963092145">+38 (096) 309 21 45</a>
           <a class="header_email" href="#">layout585@gmail.com</a>
-          <a class="header_btn" href="#">Бесплатная консультация</a>
+          <a data-fancybox data-src="#modal" href="javascript:;" class="header_btn" href="#">Бесплатная консультация</a>     <!--подключаем  всплывающее окно, див окна внизу перед бади закрывающим-->
         </div>
       </div>
     </div>
@@ -43,6 +45,17 @@
       </div>
     </div>
     </header>
+
+
+
+  <div id="modal">
+    <h2>Hello!</h2>
+    <p>You are awesome!</p>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>       <!--подключаем вот в таком порядке в конце тега бади-->
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
