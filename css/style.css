@@ -131,7 +131,7 @@ header{
   min-height: 500px;
 }
 
-.slider_item{
+.slider_item-content{
   text-align: center;
   padding-top: 110px;
   max-width: 665px;
@@ -140,4 +140,30 @@ header{
 
 .slider_title{
   text-transform: uppercase;
+  font-size: 30px;
+  line-height: 36px;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  margin-bottom: 22px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.slider_text{
+  line-height: 24px;
+  font-size: 18px;
+  color: #d3d2d2;
+  margin-bottom: 50px;
+}
+
+.slider_btn{
+  display: inline-block;
+  font-size: 14px;
+  line-height: 24px;
+  color: #fff;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  padding: 8px 30px 8px 24px;
+  border: 1px solid #ffc222;
+  border-right-width: 20px;
 }
